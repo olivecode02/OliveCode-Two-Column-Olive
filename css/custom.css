@@ -28,13 +28,14 @@ a {
 }
 #page {
 	width: 1349px;
+	margin: 0 auto;
 }
 
 #wrapper {
 	padding: 20px;
 	background-image: url(http://two-column.localhost/css/images/header-slide.jpg);
 	background-size: 100%;
-	height: 718px;
+	height: 598px;
 }
 .page-title, .nav-menu {
 	display: inline-block;
@@ -102,21 +103,22 @@ a {
 	width: 800px;
 	margin: 0 auto;
 }
-.product-content {
+.feat-prod-box .product-content {
 	display: inline-block;
 	width: 250px;
 	margin-right: 17px;
 }
-.product-content img {
+.feat-prod-box .product-content img {
 	width: 250px;
 }
-.product-content p {
+.feat-prod-box .product-content p,
+.product-box .product-content p {
 	text-align: center;
 	margin: 0;
 	font-size: 19px;
 	font-weight: bold;
 }
-.product-content:last-child {
+.feat-prod-box .product-content:last-child {
 	margin: 0;
 }
 
@@ -155,12 +157,20 @@ a {
 	list-style-type: none;
 }
 .side-division ul li a {
-	font-size: 24px;
-	line-height: 45px;
+	line-height: 66px;
 }
 .side-category h2 a,
 .side-division ul li a {
 	color: #2f2f2f;
+	font-size: 37px;
+}
+.side-category h2:after {
+	content: url(http://two-column.localhost/css/images/block.png);
+	margin-left: 19px;
+}
+.side-division ul li a:after {
+	content: url(http://two-column.localhost/css/images/block2.png);
+	margin-left: 31px;
 }
 
 footer {
@@ -223,3 +233,29 @@ footer h2:before {
 	font-size: 20px;
 	text-align: center;
 }
+
+/*  Apparels Start  */
+.product-header h2 {
+	font-family: "Bebas Neue";
+	font-size: 85px;
+	text-align: center;
+}
+.product-box {
+	width: 830px;
+	margin: 0 auto;
+}
+.product-box .product-content,
+.product-box .product-content img {
+	width: 383px;
+}
+.product-box .product-content {
+	display: inline-block;
+	margin-right: 56px;
+	margin-bottom: 40px;
+}
+.product-box .product-content:nth-child(2),
+.product-box .product-content:nth-child(4),
+.product-box .product-content:nth-child(6) {
+	margin: 0;
+}
+/*  Apparels End  */
